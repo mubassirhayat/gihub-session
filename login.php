@@ -9,7 +9,7 @@
 			// autheticate
 			if ($_POST['password'] === $credentials['password']) {
 				$_SESSION['logged_in'] = true;
-				$_SESSION['name'] = $credentials['username'];
+				$_SESSION['name'] = ['username'];
 				header("Location: index.php");
 			}
 			else
