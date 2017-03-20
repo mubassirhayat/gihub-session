@@ -5,7 +5,7 @@
 		// Retrive user from database
 		$credentials = ['username' => 'admin', 'password' => '123456'];
 		// compare credentials
-		if ($_POST['username'] === $credentials['username']) {
+		if ($_POST['username'] === ['username']) {
 			// autheticate
 			if ($_POST['password'] === $credentials['password']) {
 				$_SESSION['logged_in'] = true;
